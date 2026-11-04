@@ -5,6 +5,7 @@ import {
   Instagram, Facebook, Youtube, Twitter, Globe, Shield
 } from 'lucide-react';
 import { flavors } from './FlavorData';
+import skate from './assets/skate.png';
 
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -201,7 +202,7 @@ function App() {
               className="athlete-card"
               whileHover={{ y: -10 }}
             >
-              <img src="/src/assets/skate.png" alt="Skate" />
+              <img src={skate} alt="Skate" />
               <div className="athlete-info">
                 <span>STREET</span>
                 <h4>URBAN LEGENDS</h4>
